@@ -5,9 +5,10 @@ const box = document.querySelector(".box");
 const icons = document.querySelector(".icons__animation");
 const pageHeader = document.querySelector(".page-header");
 const body = document.querySelector(".body");
-const javascript = document.querySelector(".javascript")
-const javascriptIcon = document.querySelector(".javascript__icon")
-const topButton = document.getElementById("top__button")
+const javascript = document.querySelector(".javascript");
+const javascriptIcon = document.querySelector(".javascript__icon");
+const topButton = document.getElementById("top__button");
+const screenWidth = window.screen.width;
 
 arrowButton.addEventListener("click", () => {
   arrowButton.classList.add("active__arr");
@@ -54,22 +55,19 @@ $(document).ready(function(){
   });
 });
 
-window.onscroll = function() {
-  scrollFunction();
-};
+window.addEventListener('scroll', scrollFunction)
 
 topButton.addEventListener("click", topFunction)
 
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      topButton.style.display = "block";
-    } else {
-      topButton.style.display = "none";
-    }
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topButton.style.display = "block";
+  } else {
+    topButton.style.display = "none";
+  }
 }
 
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
-

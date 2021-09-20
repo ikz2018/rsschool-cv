@@ -26,6 +26,20 @@
 					<li><a href="#english" class="navigation__item">English level</a></li>
 				</ul>
 			</nav>
+			<div class="burger__menu">
+				<input id="toggle" type="checkbox">
+				<label class="toggle-container" for="toggle">
+					<span class="button-toggle"></span>
+				</label>
+				<nav class="burger__navigation">
+					<a class="burger__item" href="#skills">Technical skills</a>
+					<a class="burger__item" href="#code">Code style</a>
+					<a class="burger__item" href="#projects">Recent projects</a>
+					<a class="burger__item" href="#experience">Experience</a>
+					<a class="burger__item" href="#education">Education</a>
+					<a class="burger__item" href="#english">English level</a>
+				</nav>
+			</div>
 		</header>
 		<main class="main">
 			<h1 class="visually-hidden">Islamzhon Karimov - Junior Frontend Developer resume</h1>
@@ -86,8 +100,7 @@
 					</div>
 				</section>
 				<section class="skills" id="skills">
-					<div class="skills__container">
-						<h2>Skills</h2>
+					<h2>Skills</h2>
 						<ul class="skills__list">
 							<li class="skills__item">
 								<ul class="skill__column">
@@ -104,31 +117,27 @@
 								</ul>
 							</li>
 						</ul>
-					</div>
-					<div class="code-example" id="code">
+				</section>
+				<section class="code-example" id="code">
+					<h2 class="visually-hidden">Code example</h2>
+					<div class="code__inner">
 						<pre><code class="language-javascript">
-							let setIconColor = icons.addEventListener("mouseover", (evt) => {
-								body.style.background = window.getComputedStyle(evt.target).color;
-							})
-							
-							$(document).ready(function(){
-							
-								$("a").on('click', function(event) {
-							
-									if (this.hash !== "") {
-										event.preventDefault();
-							
-										let hash = this.hash;
-							
-										$('html, body').animate({
-											scrollTop: $(hash).offset().top
-										}, 800, function(){
-							
-											window.location.hash = hash;
-										});
-									}
-								});
-							});
+	let setIconColor = icons.addEventListener("mouseover", (evt) => {
+		body.style.background = window.getComputedStyle(evt.target).color;
+	})
+	$(document).ready(function(){
+		$("a").on('click', function(event) {
+			if (this.hash !== "") {
+				event.preventDefault();
+				let hash = this.hash;
+				$('html, body').animate({
+					scrollTop: $(hash).offset().top
+				}, 800, function(){
+					window.location.hash = hash;
+				});
+			}
+		});
+	});
 						</code></pre>
 					</div>
 				</section>
@@ -201,7 +210,7 @@
 					<a href="mailto:ikz2018@bk.ru" target="_blank">Mail</a>
 				</li>
 				<li class="footer-links__item">
-					<a href="https://rs.school/js/" target="_blank"><img src="images/rs_school_js.svg" alt="rs school logo" width="100" height="200"></a>
+					<a href="https://rs.school/js/" target="_blank"><img class="rsschool__link" src="images/rs_school_js.svg" alt="rs school logo" width="100" height="200"></a>
 				</li>
 			</ul>
 		</div>
