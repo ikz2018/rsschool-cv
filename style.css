@@ -274,7 +274,7 @@
     transform: translateY(-50%) scaleY(5);
     transition: 0.5s;
   }
-  }
+}
 
 .about {
   display: flex;
@@ -342,7 +342,6 @@ li {
 	border-radius: 50%;
 }
 
-
 .javascript {
   left: 30%;
   bottom: 30%;
@@ -359,7 +358,6 @@ li {
   color:#fdff8b60;
 	border-radius: 50%;
 }
-
 
 .nodejs {
   right: 25%;

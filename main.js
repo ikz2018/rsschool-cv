@@ -55,7 +55,6 @@ $(document).ready(function(){
   });
 });
 
-
 window.addEventListener('scroll', scrollFunction)
 
 topButton.addEventListener("click", topFunction)
