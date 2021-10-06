@@ -283,13 +283,6 @@
   justify-content: space-around;
   margin: 0 auto;
   height: 900px;
-  margin-bottom: 70px;
-}
-
-@media only screen  and (max-width: 680px) {
-  .about {
-    margin-bottom: 50px;
-  }
 }
 
 .about .about__top {
@@ -838,7 +831,7 @@ li {
 
 @media only screen  and (max-width: 560px) {
   .experience, .education {
-    height: 250px;
+    height: 350px;
   }
   .english {
     height: 150px;
